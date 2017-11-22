@@ -1,0 +1,21 @@
+#linux 192.168.132.168 onrack onrack tcpdump -i ens192 -S -s 65535 -w ens192.pcapng
+#
+#esxi 192.168.190.12 root cisolution pktcap-uw --uplink vmnic5 --ng --outfile vmnic5.pcapng
+#
+#esxi 192.168.190.5 root cisolution pktcap-uw --uplink vmnic2 --ng --outfile vmnic2.pcapng
+#esxi 192.168.190.5 root cisolution pktcap-uw --uplink vmnic3 --ng --outfile vmnic3.pcapng
+#esxi 192.168.190.5 root cisolution pktcap-uw --uplink vmnic4 --ng --outfile vmnic4.pcapng
+#
+##linux 192.168.135.167 infrasim infrasim tcpdump -i ens160 -S -s 65535 -w ens160.pcapng
+#linux 192.168.135.167 infrasim infrasim tcpdump -i ens192 -S -s 65535 -w ens192.pcapng
+#linux 192.168.135.167 infrasim infrasim tcpdump -i ens224 -S -s 65535 -w ens224.pcapng
+##linux 192.168.135.167 infrasim infrasim tcpdump -i ens256 -S -s 65535 -w ens256.pcapng
+#linux 192.168.135.167 infrasim infrasim tcpdump -i br0 -S -Q out -s 65535 -w br0.pcapng
+#linux 192.168.135.167 infrasim infrasim tcpdump -i tap0 -S -Q out -s 65535 -w tap0.pcapng
+#
+#linux 192.168.133.156 infrasim infrasim tcpdump -S -s 65535 -w enp0s3.pcapng
+
+linux 192.168.135.163 infrasim infrasim tcpdump -i ens192 -S -s 65535 -w ens192.pcapng
+linux 192.168.135.163 infrasim infrasim tcpdump -i ovs-br0 -S -s 65535 -w ovs-br0.pcapng
+linux 192.168.135.163 infrasim infrasim tcpdump -i veth0 -S -s 65535 -w veth0.pcapng
+linux 192.168.136.22 vagrant vagrant tcpdump -i eth1 -S -s 65535 -w eth1.pcapng
